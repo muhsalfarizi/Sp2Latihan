@@ -1,0 +1,13 @@
+function logikaSegitiga(satu, sepuluh){
+    for(a = satu; a < sepuluh; a++){
+        for(b = satu; b < sepuluh; b++){
+            if(a <= b && a >= 9 - (b - 1) || a <= 9 - (b - 1) && a >= b){
+                document.write(" * ")
+            } else {
+                document.write(" _ ")
+            }
+        }
+        document.write("<br>")
+    }
+}
+logikaSegitiga(1, 10)
